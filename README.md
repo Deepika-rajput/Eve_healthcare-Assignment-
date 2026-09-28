@@ -157,12 +157,11 @@ Covered in `tests/test_webhook_idempotency.py` (same event replayed 3 times give
 
 ## What I would improve with more time
 
-- **Alembic migrations** instead of `create_all()`.
-- **HMAC signature verification** on the webhook, plus a timestamp check to prevent replay.
+- Refresh tokens and stronger password rules.
 - **Role-based access** (admin/staff) for managing centres and tests.
 - **Slot capacity / double-booking prevention** with a constraint or availability table.
 - **Retry handling with Celery + Redis:** process webhooks asynchronously with backoff and a dead-letter queue.
 - **Redis caching** for the read-mostly centres list, invalidated on writes.
 - **Rate limiting** on login and the webhook, and **structured JSON logging** with request IDs.
 - **PostgreSQL** (preferred in the brief) and a CI pipeline running the tests.
-- Refresh tokens and stronger password rules.
+
