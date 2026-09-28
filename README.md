@@ -4,9 +4,9 @@ A backend REST API for **diagnostic centres, test bookings and simulated payment
 
 ## Tech stack
 
-FastAPI · Pydantic v2 · SQLAlchemy 2.0 · MySQL (PyMySQL) · JWT (python-jose) + bcrypt (passlib) · pytest + httpx · Docker / docker-compose
+FastAPI · SQLAlchemy 2.0 · MySQL (PyMySQL) · JWT (python-jose) + bcrypt (passlib) · pytest + httpx · Docker / docker-compose
 
-## Run locally
+## Run locally-to run this locally on system
 
 ### Option A: Docker (app + MySQL)
 
@@ -16,7 +16,7 @@ docker compose up --build
 
 API: `http://localhost:8000` · Swagger UI: `http://localhost:8000/docs`
 
-### Option B: Python venv
+### Option B: Python venv 
 
 ```bash
 python -m venv venv
